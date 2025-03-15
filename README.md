@@ -1,5 +1,5 @@
 # RandomStringGenerator
 
-**Version 1.0**
+**Version 0.1**
 - Innocent looking program
 - Using Mersenne Twister as PRNG
