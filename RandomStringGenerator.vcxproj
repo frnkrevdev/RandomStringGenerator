@@ -131,10 +131,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="RandomStringGenerator.cpp" />
+    <ClCompile Include="InputValidation\clearAndIgnoreLine.cpp" />
+    <ClCompile Include="InputValidation\extraneousInput.cpp" />
+    <ClCompile Include="InputValidation\inputFailedExtraction.cpp" />
+    <ClCompile Include="InputValidation\inputInvalid.cpp" />
+    <ClCompile Include="Source\RandomStringGenerator.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Random.h" />
+    <ClInclude Include="InputValidation\InputValidation.h" />
+    <ClInclude Include="Source\Random.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

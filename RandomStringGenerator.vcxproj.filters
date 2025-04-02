@@ -15,12 +15,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="RandomStringGenerator.cpp">
+    <ClCompile Include="Source\RandomStringGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InputValidation\clearAndIgnoreLine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InputValidation\extraneousInput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InputValidation\inputFailedExtraction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InputValidation\inputInvalid.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Random.h">
+    <ClInclude Include="Source\Random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputValidation\InputValidation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

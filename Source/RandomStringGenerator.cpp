@@ -1,9 +1,8 @@
-#include "Random.h"
-
+#include "../InputValidation/InputValidation.h"		// Library for unexpected console inputs
+#include "Random.h"									// Self-seeding Mersenne Twister made by Alex from learncpp.com
 #include <iostream>
 #include <limits>
 #include <string>
-
 
 // Function that let the user enter the number of characters to be generated
 int numChar()
@@ -14,16 +13,7 @@ int numChar()
 		std::cin >> numChar;
 
 		// Input validation
-		if (std::cin && (std::cin.peek() != '\n')) {
-			std::cin.clear();
-			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-			std::cout << "Error! Invalid input.\n";
-			continue;
-		}
-		if (!std::cin) {
-			std::cin.clear();
-			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-			std::cout << "Error! Invalid input.\n";
+		if (inputInvalid()) {
 			continue;
 		}
 		if (numChar <= 1 ) {
@@ -44,16 +34,7 @@ int numLines()
 		std::cin >> numLines;
 
 		// Input validation
-		if (std::cin && (std::cin.peek() != '\n')) {
-			std::cin.clear();
-			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-			std::cout << "Error! Invalid input.\n";
-			continue;
-		}
-		if (!std::cin) {
-			std::cin.clear();
-			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-			std::cout << "Error! Invalid input.\n";
+		if (inputInvalid()) {
 			continue;
 		}
 		if (numLines <= 0) {
