@@ -139,6 +139,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="InputValidation\InputValidation.h" />
+    <ClInclude Include="Source\constants.h" />
     <ClInclude Include="Source\Random.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
